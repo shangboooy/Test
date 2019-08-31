@@ -1,0 +1,262 @@
+@charset "UTF-8";
+@import url("LEGOmenu.css");
+/* CSS Document */
+
+html {
+	height: 100%;
+}
+
+body{
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體";
+	margin:0;
+	padding:0;
+	height: 100%;
+	background:#fff;
+}
+
+header{
+	position:fixed; /*鎖在最上面*/
+	top:0;
+	width:100%;
+	min-width:980px;
+	height: 60px;
+	box-sizing:border-box;
+	background: rgba(0, 0, 0, 0.05);
+	z-index:1000;
+}
+
+#top, #three{
+	position:fixed;
+	width: 120px;
+	top: 11px;
+}
+#top{
+	left: 40px;
+}
+#three{
+	top: 20px;
+	width: 30px;
+	right: 40px;
+}
+
+nav{
+	width:100%;
+	height: 100%;
+	margin:auto;
+	text-align:center;
+}
+
+.ID{
+	color: #000;
+}
+.LEGO{
+	color: #FF7E00;
+}
+
+section{
+	position: relative;
+	margin: auto;
+	margin-top:20px;
+	top: 60px;
+	width: 100%;
+	height: 600px;
+	/*border: #D13C3F 1px solid;*/ /*檢查用*/
+}
+.S1,.S3,.S4{
+	width: 65%;
+}
+.S2{
+	width: 60%;
+}
+.S1{
+	height: 400px;
+	margin-top:100px;
+}
+.S3{
+	height: 550px;
+}
+.S4{
+	margin-bottom:100px;
+}
+.S5{
+	width: 10%;
+	height: 270px;
+}
+
+.s1_title, .s2_title, .s3_title, .s4_title {
+	position: absolute;
+	width: 100%;
+}
+
+.S4 img{
+	margin-top: 50px;
+}
+
+.title{
+	display: inline-block; /*文字框置中*/
+	width: 100%;
+	height: 80px;
+	font-family: 'K2D', sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 80px;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ff9300;
+}
+.HOME{
+	height: 550px;
+}
+
+.home{
+	margin-top: 110px;
+	text-align: center;
+}
+
+.home img{
+	width: 80%;
+}
+
+.Photo{
+	height: 420px;
+	overflow: hidden;
+}
+
+.LEGOphoto{
+	display: inline-block;
+	position: absolute;
+	width: 100%;
+}
+.LEGOphoto img{
+	margin: auto;
+	width: 100%;
+}
+.question{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	z-index: 10000;
+	top: 350px;
+	font-family: 'K2D', sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 10px;
+	letter-spacing: normal;
+	text-align: center;
+	color: #fff;
+}
+
+.CONCEPT{
+	width:100%;
+}
+
+.CONCEPT img{
+	width:100%;
+}
+
+.Industrial{
+	position: absolute;
+	width: 100%;
+	height: 600px;
+	top: 80px;
+	-webkit-column-count: 3; /*Chrome, Safari, Opera*/
+	-moz-column-count: 3; /*Firefox*/
+	column-count: 3;
+	-webkit-column-gap: 20px; /*Chrome, Safari, Opera*/
+	-moz-column-gap: 20px;	/*Firefox*/
+	column-gap: 20px;
+}
+
+
+/*----------------------S2-S3-BOXSETTING----------------------*/
+
+.box{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin: 12pt 0px 0px;
+	overflow: hidden;
+	z-index: 10;
+	/* box-shadow: 2px 2px 8px #999; */  /* 在卡片區域後加上陰影 */
+}
+.imgbox{
+	width: 100%;
+	height: 233px;
+	overflow: hidden;
+}
+
+.box img{
+	width: 100%;
+}
+
+.box:hover{
+	cursor: pointer;
+}
+
+.box .imgbox img{
+	-ms-transform: scale(1,1); /* IE 9 */
+	-webkit-transform: scale(1,1); /* Safari */
+	transform: scale(1,1); /* Standard syntax */
+	
+	transition: transform 1.5s;
+	-webkit-tansition: transform 1.5s;
+	
+	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;
+}
+
+.box:hover .imgbox img{
+	-ms-transform: scale(1.6,1.6);
+	-webkit-transform: scale(1.6,1.6);
+	transform: scale(1.6,1.6);
+}
+
+.box h3{
+	box-sizing: border-box;
+	font-size: 21px;
+	font-family: 'K2D', sans-serif;
+	padding: 0px 20px;
+	color: #3D3D3D;
+}
+
+.box p{
+	box-sizing: border-box;
+	padding: 0px 20px;
+	color: #666; 
+}
+
+.head{
+	display: inline-block;
+	padding: 0px 20px 20px;	
+}
+
+.head img{
+	float: left;
+	width: 40px;
+	height: 40px; /*圖片高度40px */
+	border-radius: 50%; /*把圖變成正圓 */
+}
+
+.head span{				/* span是在強調段落文字中 所需要強調或是特別不一樣的字段 */
+	float: left;
+	font-size: 13px;
+	color: #999;
+	line-height: 40px; /* 圖片高度40px 所以把行距設成40px 文字就能垂直置中了 */
+	margin-left: 10px;
+}
+
+footer{
+	clear:both;
+	padding:50px;
+	text-align:center;
+	color:#818181;
+}
+
+
+
+

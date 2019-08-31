@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import url("aboutmenu.css");
+/* CSS Document */
+
+body{
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體";
+	margin:0;
+	padding:0;
+	height: 100%;
+	background:#FFF3E3;
+}
+
+header{
+	position:fixed; /*鎖在最上面*/
+	top:0;
+	width:100%;
+	min-width:980px;
+	height: 60px;
+	box-sizing:border-box;
+	background: rgba(255, 255, 255, 0.5);
+	z-index:1000;
+}
+
+#top, #three{
+	position:fixed;
+	width: 120px;
+	top: 11px;
+}
+#top{
+	left: 40px;
+}
+#three{
+	top: 20px;
+	width: 30px;
+	right: 40px;
+}
+
+nav{
+	width:100%;
+	height: 100%;
+	margin:auto;
+	text-align:center;
+}
+section{
+	position: relative;
+	margin: auto;
+	top: 60px;
+	width: 100%;
+	height: 695px;
+	/*border: #D13C3F 1px solid;*/ /*檢查用*/
+}
+
+.home{
+	width: 100%;
+}
+
+.home img{
+	width: 100%;
+}
+.S1CV{
+	height: 1400px;	
+}
+.CV{
+	display: inline-block;
+	position: absolute;
+	height: 100px;
+	width: 70%;
+	left: 15%;
+}
+
+.CV img{
+	width: 100%;
+}
+
+.connect{
+	height: 200px;
+}
+
+.connectme{
+	margin-top: 10px;
+	height: 150px;
+	text-align: center;
+	/*border: #D13C3F 1px solid;*/ /*檢查用*/
+}
+.connectme img{
+	margin: 35px;
+	width: 50px;
+	opacity: 0.8;
+}
+.photo{
+	width: 55%;
+	height: 750px;
+}
+
+.me img{
+	width: 100%;
+}
+
+footer{
+	clear:both;
+	padding:50px;
+	text-align:center;
+	color:#818181;
+}
+

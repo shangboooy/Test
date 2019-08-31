@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@import url("bagmenu.css");
+/* CSS Document */
+
+body{
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體";
+	margin:0;
+	padding:0;
+	height: 100%;
+	background:#F4ECDD;
+}
+
+header{
+	position:fixed; /*鎖在最上面*/
+	top:0;
+	width:100%;
+	min-width:980px;
+	height: 60px;
+	box-sizing:border-box;
+	background: rgba(255, 255, 255, 0.6);
+	z-index:1000;
+}
+
+#top, #three{
+	position:fixed;
+	width: 120px;
+	top: 11px;
+}
+#top{
+	left: 40px;
+}
+#three{
+	top: 20px;
+	width: 30px;
+	right: 40px;
+}
+
+nav{
+	width:100%;
+	height: 100%;
+	margin:auto;
+	text-align:center;
+}
+.Graphic{
+	color: #000;
+}
+.paper{
+	color: #FF7E00;
+}
+
+section{
+	position: relative;
+	margin: auto;
+	margin-top:80px;
+	width: 70%;
+	height: 700px;
+	/*border: #D13C3F 1px solid;*/ /*可以檢查的紅線*/
+}
+
+.home{
+	margin-top: 135px;
+	text-align: center;
+}
+
+.home img{
+	width: 70%;
+}
+
+.title{
+	display: inline-block; /*文字框置中*/
+	width: 100%;
+	height: 80px;
+	font-family: 'K2D', sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 80px;
+	letter-spacing: normal;
+	text-align: center;
+	color: #502800;
+	/*border: #D13C3F 1px solid;*/ /*可以檢查的紅線*/
+}
+
+.about_motto{
+	display: inline-block; /*文字框置中*/
+	padding-top: 20px;
+	width: 100%;
+	height: 60px;
+	font-family: 'K2D', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 25px;
+	letter-spacing: normal;
+	text-align: center;
+	color: #424242;
+}
+.PNG{
+	width:100%;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.PNG img{
+	width: 38%;
+}
+
+.S2{
+	height: 850px;
+}
+.sketch{
+	width:100%;
+	margin-top: 10px;
+	text-align: center;
+}
+.sketch img{
+	padding: 20px;
+	width: 50%;
+}
+
+.S3{
+	height:1200px;
+}
+.updown{
+	margin-top:30px;
+}
+.up,.down{
+	width:80%;
+	margin: auto;
+}
+.up_left,.up_mid,.up_right{
+	display: inline-block;
+	width: 32.15%;
+	height: 400px;
+	overflow: hidden;
+}
+.down{
+	height: 300px;
+	overflow: hidden;
+}
+.up_left,.up_mid{
+	margin-right: 1%;
+	margin-bottom: 1%;
+}
+.up_right{
+	margin-bottom: 1%;
+}
+.up img{
+	width: 120%;
+}
+.down img{
+	width: 100%;
+}
+
+footer{
+	clear:both;
+	padding:50px;
+	text-align:center;
+	color:#818181;
+}
+
+
+
+

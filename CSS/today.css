@@ -1,0 +1,431 @@
+@charset "utf-8";
+@import url("menu.css");
+/* CSS Document */
+
+/*basic settings*/
+
+html {
+	height: 100%;
+}
+
+body{
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體";
+	margin:0;
+	padding:0;
+	height: 100%;
+	background:#F2F2F2;
+}
+
+::-moz-selection{ /*for firefox*/
+	color:#fff;
+	background:#19A5CA;
+}
+
+::selection{
+	color:#fff;
+	background:#19A5CA;
+}
+
+/*header*/
+
+header{
+	position:fixed; /*鎖在最上面*/
+	top:0;
+	width:100%;
+	min-width:980px;
+	height: 60px;
+	box-sizing:border-box;
+	background: rgba(0, 0, 0, 0.15);
+	z-index:1000;
+}
+
+#top, #three{
+	position:fixed;
+	width: 120px;
+	top: 11px;
+}
+#top{
+	left: 40px;
+}
+#three{
+	top: 20px;
+	width: 30px;
+	right: 40px;
+}
+
+nav{
+	width:100%;
+	height: 100%;
+	margin:auto;
+	text-align:center;
+}
+
+.banner{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	/*min-weight:980px;*/
+	height:100%;
+	background:url(../image/homepage/home.JPG) no-repeat center;
+	background-size: cover;
+	}
+
+.anitext{
+	position:absolute;
+	padding:12px 25px 12px 25px;
+	border-radius: 10px;
+	left:15%;
+	top:50%;
+	color:#fff;
+	background:#E58100;
+	font-family: 'K2D', sans-serif;
+	font-size:40px;
+	/*font-weight:bold;*/
+	opacity:0.8;
+	
+	-webkit-animation-name: ant; /*safari 4.0-8.0*/
+	animation-name: ant;
+	-webkit-animation-duration: 3s;
+	animation-duration:3s;
+	-webkit-animation-iteration-count:1;
+	animation-iteration-count:1;
+	-webkit-animation-timing-function: ease;
+	animation-timing-function:ease;
+	}
+	
+@keyframes ant{
+	from {top:90%; opacity:0; background:#000;}
+	to {top:50%; opacity:0.8; background:#E58100;}
+	}
+
+/*section*/
+
+section{
+	position: relative;
+	margin: auto;
+	margin-top:100px;
+	width: 70%;
+	height: 700px;
+	/*border: #D13C3F 1px solid;*/ /*可以檢查的紅線*/
+}
+
+.s1_title, .s2_title, .s3_title, .s4_title {
+	position: absolute;
+	width: 100%;
+}
+.title{
+	display: inline-block; /*文字框置中*/
+	width: 100%;
+	height: 80px;
+	font-family: 'K2D', sans-serif;
+	font-size: 32px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 80px;
+	letter-spacing: normal;
+	text-align: center;
+	color: #482600;
+	/*border: #D13C3F 1px solid;*/ /*可以檢查的紅線*/
+}
+/*-----------------------------S1-----------------------------*/
+.S1{
+	height: 500px;
+}
+
+.about_motto{
+	display: inline-block; /*文字框置中*/
+	padding-top: 20px;
+	width: 100%;
+	height: 60px;
+	font-family: 'K2D', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 25px;
+	letter-spacing: normal;
+	text-align: center;
+	color: #424242;
+}
+
+.more_border{
+	margin: auto;
+	margin-top: 20px;
+	padding: 12px 22px;
+	width: 60px;
+	height: 23.5px;
+	border-radius: 7.5px;
+	border: solid 0.5px #4d4d4d;
+}
+
+.more_text{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 15px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 100%;
+	letter-spacing: normal;
+	text-align: center;
+	color: #4d4d4d;
+}
+.more_border:hover{
+	background: #ff9300;
+	border: solid 0.5px #F2F2F2;
+	color: #FFFFFF;
+}
+.more_border:hover .more_text{
+	color: #FFFFFF;
+}
+
+
+.about_img {
+	margin-top: 40px;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+}
+
+.about_img img{
+	margin: 40px;
+	width: 100px;
+}
+
+/*---------------------------S2--S3---------------------------*/
+
+.S2,.S3{
+	height: 550px;
+}
+
+.Industrial,.Graphic {
+	position: absolute;
+	width: 100%;
+	height: 600px;
+	top: 80px;
+	-webkit-column-count: 3; /*Chrome, Safari, Opera*/
+	-moz-column-count: 3; /*Firefox*/
+	column-count: 3;
+	-webkit-column-gap: 20px; /*Chrome, Safari, Opera*/
+	-moz-column-gap: 20px;	/*Firefox*/
+	column-gap: 20px;
+}
+
+.meblack{
+	height: 500px;
+	width: 100%;
+	padding-top:50px;
+	/*border: #D13C3F 1px solid;*/ /*可以檢查的紅線*/
+}
+.meblack img{
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.firstline,.secondline{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+.firstline{
+	top: 255px;
+	font-family: 'K2D', sans-serif;
+	font-size: 34px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.36;
+	letter-spacing: normal;
+	text-align: center;
+	color: #E2E2E2;
+}
+
+.secondline{
+	top: 298px;
+	font-family: 'K2D', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.22;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+}
+
+/*-----------------------------S4-----------------------------*/
+
+.updown{
+	margin-top:30px;
+}
+.up,.down{
+	width:100%;
+}
+.up_left,.up_mid,.up_right{
+	display: inline-block;
+	width: 32.25%;
+	height: 250px;
+	overflow: hidden;
+}
+.up_left,.up_mid{
+	margin-right: 1%;
+	margin-bottom: 1%;
+}
+.up_right{
+	margin-bottom: 1%;
+}
+.up img{
+	width: 120%;
+}
+.down img{
+	width: 100%;
+}
+.mottobottom{
+	height: 200px;
+}
+.mottobottom span{
+	/*border: #D13C3F 1px solid;*/ /*可以檢查的紅線*/
+	display: inline-block;
+	margin-top: 50px;
+	width: 100%;
+	font-family: 'K2D', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.37;
+	letter-spacing: normal;
+	text-align: center;
+	color: #424242;
+}
+.connectme{
+	margin-bottom: 250px;
+	height: 100px;
+	text-align: center;
+}
+.connectme img{
+	opacity: 0.7;
+	margin: 40px;
+	width: 50px;
+}
+
+
+/*----------------------S2-S3-BOXSETTING----------------------*/
+
+.box{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	background: #F2F2F2;
+	margin: 12pt 0px 0px;
+	overflow: hidden;
+	z-index: 10;
+	/* box-shadow: 2px 2px 8px #999; */  /* 在卡片區域後加上陰影 */
+}
+.imgbox{
+	width: 100%;
+	height: 290px;
+	overflow: hidden;
+}
+
+.box img{
+	width: 100%;
+}
+
+.box:hover{
+	cursor: pointer;
+}
+
+.box .imgbox img{
+	-ms-transform: scale(1,1); /* IE 9 */
+	-webkit-transform: scale(1,1); /* Safari */
+	transform: scale(1,1); /* Standard syntax */
+	
+	transition: transform 1.5s;
+	-webkit-tansition: transform 1.5s;
+	
+	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;
+}
+
+.box:hover .imgbox img{
+	-ms-transform: scale(1.25,1.25);
+	-webkit-transform: scale(1.25,1.25);
+	transform: scale(1.25,1.25);
+}
+
+.box:hover .picbox img{
+	-webkit-filter: brightness(50%); /*sadari*/
+	filter:brightness(50%);
+}
+
+.picbox:hover .fadebox{
+	opacity:1;
+}
+
+.fadebox{
+	position: absolute;
+	top:28.5%;
+	left:16.25%;
+	-ms-transform:translate(-50%, -50%);/*IE9*/
+	-webkit-transform:translate(-50%, -50%);/*safari*/
+	transform: translate(-50%, -50%);
+	-webkit-transition: 0.5s ease;
+	opacity:0;
+}
+
+.fadebox a{
+	display:block;
+	padding: 13px 26px;
+	color:#fff;
+	text-decoration:none;
+	/*background: #19A5CA;*/
+	border-radius: 7.5px;
+	border: solid 0.5px #FFF;
+}
+
+.box h3{
+	box-sizing: border-box;
+	font-size: 21px;
+	font-family: 'K2D', sans-serif;
+	padding: 0px 20px;
+	color: #3D3D3D;
+}
+
+.box p{
+	box-sizing: border-box;
+	padding: 0px 20px;
+	color: #666; 
+}
+
+.head{
+	display: inline-block;
+	padding: 0px 20px 20px;	
+}
+
+.head img{
+	float: left;
+	width: 40px;
+	height: 40px; /*圖片高度40px */
+	border-radius: 50%; /*把圖變成正圓 */
+}
+
+.head span{				/* span是在強調段落文字中 所需要強調或是特別不一樣的字段 */
+	float: left;
+	font-size: 13px;
+	color: #999;
+	line-height: 40px; /* 圖片高度40px 所以把行距設成40px 文字就能垂直置中了 */
+	margin-left: 10px;
+}
+
+/*footer*/
+
+footer{
+	clear:both;
+	padding:50px;
+	text-align:center;
+	color:#818181;
+}

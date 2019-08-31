@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+nav ul{
+	padding:0;
+	margin:0;
+	list-style: none;
+	height: 100%;
+}
+
+nav li{
+	position:relative;
+	display: inline-block;
+	height: 100%;
+}
+
+
+
+/*==============level 1==============*/
+nav li a{
+	display:block; /*設定display:block才能設定寬度和高度*/
+	width:200px;
+	height: 100%;
+	line-height:60px;
+	color: #fff;
+	text-decoration:none;
+	text-align:center;
+	font-size: 17px;
+}
+
+nav li a:hover{
+	color:#fff;
+	background: rgba(255,170,0,0.6);
+}
+
+/*==============level 2==============*/
+nav li ul{
+	position:absolute;
+	display:none; /*讓第二層消失*/
+	left:0;
+	margin:0;
+}
+
+nav ul li:hover > ul{
+	display:block; /*當上面那層hover的時候，把他下面的ul顯示出來*/
+}
+
+nav ul ul a{
+	width:150px;
+	margin:0;
+	color: #000;
+	background:#ccc;
+}
+
+
+
+/*==============level 3 and more==============*/
+nav ul ul li:hover > ul{
+	display:block;
+	position:absolute;
+	top:0; /*top 0 就是對其最上層*/
+	left:100%;
+}
